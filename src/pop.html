@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #008888;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow:hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.html{
+  height:100%;
+}
+
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 80vh;
+  width: 60vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ff66ff 50%, #cc33ff 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.space {
+  height: 100px;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+.hero {
+  padding: 10px 20px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:#000099;
+  border: none;
+  top: 12px;
+  left: 15px;
+   position: absolute;
+  border-radius: 15px;
+  margin:2px solid yellow;
+  box-shadow: 0 7px #66ffff;
+  text-decoration:none;
+}
+
+.hero:hover {background-color: #99ff33
+color:red; }
+
+.hero:active {
+  background-color: blue;
+  box-shadow: 0 5px  #009900;
+  transform: translateY(4px);
+}
+</style>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<a href="navbar.html" class="hero" >Back</a>
+<div class="card">
+  <div class="text">
+    <h1>Happy Birthday!</h1>
+    <p>I hope you have a wonderful birthday</p>
+    <p class="muted">- Jonah Lawrence</p>
+  </div>
+  <div class="space"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2169 @@
+
+/****************** variables ******************/
+
+$josefin: 'Josefin Sans', sans-serif;
+$abril: 'Abril Fatface', cursive;
+
+$navynight: #002863;
+$rudolph: #F35849;
+$rosy: #FF77E1;
+$goldenrings: #F5DA77;
+$noblefir: #023535;
+$seafoamgrinch: #81D7AD;
+$white: #FFF5F5;
+$coal: #0E0B0B;
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+body{
+    color: red;
+    height: 100%;
+    box-sizing: content-box;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: $josefin;
+}
+
+
+
+/************************************ fade transitions ******************/
+.fade-appear, .fade-enter{
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .fade-appear-active, .fade-enter.fade-enter-active{
+    opacity: 1;
+    transition: opacity 300ms linear 150ms;
+  }
+  .fade-exit{
+    opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+  }
+
+/******************** NavBar ***********************/
+
+.nav-holder{
+width: 100%;
+height: 87px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+position: relative;
+z-index: 3;
+border-radius: 0px 0px 60px 60px;
+}
+
+.title{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px;
+position: relative;
+
+width: 167px;
+height: 66px;
+color: #81D7AD;
+font-family: $abril;
+/* noble fir */
+
+background: #023535;
+/* white as winter snow */
+
+border: 4px solid #FFF5F5;
+box-sizing: border-box;
+}
+
+.title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 171.82px;
+    height: 56.56px;
+    z-index: -1;
+    background: #81D7AD;
+    -webkit-transform: rotate(12.57deg);
+    -moz-transform: rotate(12.57deg);
+    -o-transform: rotate(12.57deg);
+    -ms-transform: rotate(12.57deg);
+    transform: rotate(12.57deg);
+    transform: rotate(12.57deg);
+}
+
+.logo{
+    margin-left: 20px;
+    font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 52px;
+display: flex;
+align-items: center;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 36.1vw;
+    margin-right: 20px;
+}
+
+.nav-item{
+    cursor: pointer;
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+color:  #002863;
+}
+
+.white{
+    color: #002863;
+    font-family: $josefin;
+}
+
+.transparent{
+    background: transparent;
+}
+
+.red{
+    color: $rudolph;
+    font-family: $josefin;
+}
+
+
+/********************* Home page *******************/ 
+
+
+#main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+}
+
+.page-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10000;
+    overflow: hidden;
+}
+
+.page-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 94%;
+}
+
+.home-center-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-center-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-title{
+    font-family: $abril;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+text-align: center;
+letter-spacing: 0.03em;
+width: 647px;
+height: 101px;
+margin-bottom: 28px;
+
+
+/* rosy cheeks */
+
+color: #FF77E1;
+}
+
+.home-subtitle-1, .home-subtitle-2{
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+width: 375px;
+align-items: center;
+text-align: center;
+margin-bottom: 35px;
+
+/* rosy cheeks */
+
+color: #FF77E1;
+}
+
+.login-button-home{
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: inline-flex;
+align-items: center; 
+justify-content: center;
+
+/* noble fir */
+
+color: $noblefir;
+background-color: $goldenrings;
+width: 177px;
+height: 37px;
+text-align: center;
+}
+
+.home-center-right{
+    width: 380px;
+}
+
+
+
+
+/******************* budgetHub *************************/ 
+.budget-section, .gift-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homepage-outer{
+    background-color: $rosy;
+    z-index: -900;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+main { margin: auto; max-width: 960px; }
+
+.table-container {
+  padding: 0;
+  width: 100%;
+}
+
+tr.expandable > td {
+  padding: 0;
+}
+
+tr.expandable > td > .inner {
+  margin: 15px;
+  overflow: hidden;
+}
+
+.table-main{
+    width: 100%;
+}
+
+.inner-table{
+    text-align: left;
+}
+
+#add-gift-button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+width: 92.2px;
+height: 38.6px;
+left: 1139px;
+top: 681px;
+
+/* white as winter snow */
+
+background: #FFF5F5;
+/* rudolph */
+
+border: 2px solid #F35849;
+box-sizing: border-box;
+border-radius: 10px;
+
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* rudolph */
+
+color: #F35849;
+
+}
+
+#add-person-button{
+    margin-right: 24px;
+    width: 112px;
+height: 38px;
+/* rudolph */
+
+background: #F35849;
+/* white as winter snow */
+
+border: 2px solid #FFF5F5;
+box-sizing: border-box;
+border-radius: 10px;
+
+font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+
+}
+
+.left-align{
+    text-align: left;
+}
+
+.table-holder{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.button-div{
+    width: 960px;
+}
+
+.button-holder-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.gauge-holders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#chartdiv, #chartdiv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+.name-row{
+    width: 960px;
+    height: 56px;
+    left: 262px;
+    top: 735px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+/* navy night */
+
+    background: $navynight;
+}
+
+.blank-row{
+    width: 960px;
+    height: 56px;
+    left: 262px;
+    top: 735px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 960px;
+    border-spacing: 0 1em;
+    border-color: transparent; }
+
+.name-cell{
+font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+border: none;
+line-height: 24px;
+display: flex;
+align-items: center;
+width: 34vw;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+.expandable{
+    width: 960px;
+    width: 960px;
+    left: 262px;
+    top: 735px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.gift-row-flex{
+    width: 960px;
+    min-height: 56px;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 262px;
+    top: 735px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+/* white as winter snow */
+
+background: #FFF5F5;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.gift-outer{
+    width: 34.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.gift-outer-2{
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.gift-name{
+    font-family: $josefin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border: none;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+
+color: #0E0B0B;
+}
+
+.total, .gift-price{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: right;
+width: 20vw;
+
+/* seafoam grinch */
+
+color: $seafoamgrinch;
+}
+
+.button-cell, .buttons-cell{
+    width: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trash{
+    color:  #F5DA77;
+}
+
+.trash:hover{
+    cursor: pointer;
+}
+
+.trash-red{
+    color: $rudolph;
+}
+
+/**************************** tracking hub page holder ************************/
+#tracking-hub-page-holder{
+    display: flex;
+    flex-direction: column;
+    z-index: -999;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    background-color: $seafoamgrinch;
+    min-height: 100%;
+}
+
+.title-pink{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px;
+position: relative;
+
+width: 300px;
+color: $rosy;
+font-family: $abril;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+margin-top: 73px;
+
+/* rosy cheeks */
+
+color: #FF77E1;
+/* noble fir */
+
+background: #023535;
+/* white as winter snow */
+
+border: 4px solid #FFF5F5;
+box-sizing: border-box;
+margin-bottom: 50px;
+}
+
+.title-pink:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300.82px;
+    height: 88.67px;
+    z-index: -1;
+    background: $rosy;
+    -webkit-transform: rotate(12.57deg);
+    -moz-transform: rotate(12.57deg);
+    -o-transform: rotate(12.57deg);
+    -ms-transform: rotate(12.57deg);
+    transform: rotate(12.57deg);
+    transform: rotate(12.57deg);
+}
+
+#send-email-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    
+    width: 114px;
+    height: 36px;
+    
+    /* navy night */
+    
+    background: #002863;
+    /* white as winter snow */
+    
+    border: 2px solid #FFF5F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+#add-tracking-button{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+width: 203.16px;
+height: 35.58px;
+
+/* white as winter snow */
+
+background: #FFF5F5;
+font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+/* navy night */
+
+border: 2px solid #002863;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+
+.friend-cell{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+/* five golden rings */
+
+color: #F5DA77;
+width: 10vw;
+}
+
+
+/************************ Budget page ****************/
+.page-holder-outer{
+    background-color: $rudolph;
+    position: absolute;
+    width: 100%;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    justify-content: space-around;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    justify-content: space-around;
+}
+
+.logo-home{
+    color: $white;
+}
+
+.budget-center{
+width: 508px;
+height: 500px;
+
+/* noble fir */
+
+background: #023535;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+z-index: -100;
+}
+
+
+.title-blue{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 16px;
+position: relative;
+
+width: 255px;
+height: 66px;
+color: $rosy;
+font-family: $abril;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+/* rosy cheeks */
+
+color: #FF77E1;
+/* noble fir */
+
+background: #023535;
+/* white as winter snow */
+
+border: 4px solid #FFF5F5;
+box-sizing: border-box;
+margin-bottom: 25px;
+}
+
+.title-blue:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    height: 66px;
+    z-index: -1;
+    background: $rosy;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+    transform: rotate(6deg);
+    margin-bottom: 20px;
+}
+
+.choose-budget-top-stuff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.budget-subtitle-1{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+.budget-subtitle-2{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+width: 325px;
+height: 92px;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+.budget-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.budget-input{
+    border: 5px solid #FFF5F5;
+    box-sizing: border-box;
+    width: 300px;
+    height: 109px;
+    font-family: $abril;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 97px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* seafoam grinch */
+
+color: $seafoamgrinch;
+background-color: transparent;
+}
+
+.budget-dollar-sign{
+    font-family: Abril Fatface;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 97px;
+margin-right: -50px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* seafoam grinch */
+
+color: $seafoamgrinch;
+
+}
+.button-pink{
+    width: 177px;
+height: 37px;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+outline: none;
+border: none;
+text-align: center;
+
+display: inline-flex;
+align-items: center;
+justify-content: center;
+background-color: $rosy;
+}
+
+
+/**************** mail test ********/
+
+.email-outer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-section{
+    display: flex;
+    background: #002863;
+    width: 837px;
+    height: 119px;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-div{
+    width: 837px;
+    height: 643px;
+    background: #023535;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-title{
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 65px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+/* rosy cheeks */
+
+color: #FF77E1;
+}
+
+.pink-box{
+width: 398px;
+height: 262px;
+left: 101px;
+top: 307px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+/* rosy cheeks */
+
+background: #FF77E1;
+}
+
+.from-box{
+    width: 97px;
+height: 28px;
+left: 150px;
+top: 52px;
+margin-bottom: 10px;
+
+
+
+background: #81D7AD;
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+
+display: inline-flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+
+
+color: #0E0B0B;
+}
+
+.message-box{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+width: 320px;
+height: 124px;
+left: 39px;
+top: 104px;
+
+background: #002863;
+}
+
+.to-box{
+width: 107px;
+height: 28px;
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+margin-bottom: 10px;
+line-height: 12px;
+justify-content: center;
+
+
+display: inline-flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+
+
+color: #FFF5F5;
+
+
+
+background: #F35849;
+}
+
+.tracking-number-box{
+    width: 398px;
+height: 48px;
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: #000000;
+
+background: #FFF5F5;
+}
+
+
+.logo-white-email{
+font-family: SirinStencil;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 52px;
+display: flex;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+/************************* Modals *****************/
+
+.add-number-modal{
+width: 447px;
+height: 431px;
+margin-left: 32.6vw;
+position: absolute;
+margin-top: 5vh;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+
+/* five golden rings */
+
+background: #F5DA77;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open.modal:focus{
+    outline: none;
+}
+
+.modal{
+    margin-left: 32.6vw;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease;
+    z-index: 2;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .ReactModal__Overlay--before-close{
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .modal-top{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 90%;
+  }
+
+  .modal-x{
+    width: 19px !important;
+    height: 19px !important;
+    cursor: pointer;
+  }
+
+  #black-x{
+      color: $coal;
+  }
+
+.title-blue-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    
+    width: 245px;
+    
+    font-family: $abril;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    /* rosy cheeks */
+    
+    color: #FF77E1;
+    
+    
+    /* white as winter snow */
+    
+    border: 4px solid #FFF5F5;
+    box-sizing: border-box;
+    background: #002863;
+    margin-bottom: 25px;
+}
+
+.title-blue-modal::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 245px;
+    z-index: -1;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+    transform: rotate(6deg);
+    margin-bottom: 20px;
+    background: #002863;
+}
+
+.subtitle-modal-addnumber{
+    width: 325px;
+height: 35px;
+
+
+font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* coal in your stocking */
+
+color: #0E0B0B;
+}
+
+.add-number-modal-submit{
+    display: inline-flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+outline: none;
+border: none;
+
+width: 141px;
+height: 34px;
+
+/* navy night */
+
+background: #002863;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* rosy cheeks */
+
+color: #FF77E1;
+}
+
+.tracking-number-input, .note-input, .modal-dropdown{
+    width: 300px;
+height: 39px;
+left: 74px;
+top: 239.3px;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* navy night */
+
+color: #002863;
+
+/* coal in your stocking */
+
+border: 2px solid #0E0B0B;
+box-sizing: border-box;
+background-color: transparent;
+}
+
+.tracking-number-input::placeholder, .note-input::placeholder{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* navy night */
+
+color: #002863;
+}
+
+.delete-number-modal{
+    width: 447px;
+height: 223px;
+margin-left: 32.6vw;
+margin-top: 5vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+/* rudolph */
+
+background: #F35849;
+}
+
+.modal{
+    margin-left: 32.6vw;
+margin-top: 5vh;
+}
+
+.delete-number-modal-subtitle{
+    font-family: $josefin;
+    width: 325px;
+height: 35px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+.button-yes{
+    display: inline-flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+width: 141px;
+height: 34px;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+outline: none;
+border: none;
+/* identical to box height */
+
+align-items: center;
+text-align: center;
+
+/* seafoam grinch */
+
+color: #81D7AD;
+
+/* navy night */
+
+background: #002863;
+
+}
+
+.button-no{
+    display: inline-flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+
+width: 141px;
+height: 34px;
+
+
+/* seafoam grinch */
+
+background: #81D7AD;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+border: none;
+outline: none;
+text-align: center;
+
+/* navy night */
+
+color: #002863;
+}
+
+.modal-lower{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-person-modal{
+    width: 447px;
+height: 378px;
+
+/* navy night */
+
+background: #002863;
+margin-left: 32.6vw;
+position: absolute;
+margin-top: 5vh;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.title-pink-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    
+    width: 245px;
+    
+    font-family: $abril;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    /* rosy cheeks */
+    
+    color: #FF77E1;
+    
+    
+    /* white as winter snow */
+    
+    border: 4px solid #FFF5F5;
+    box-sizing: border-box;
+    background: #002863;
+    margin-bottom: 25px;
+}
+
+.title-pink-modal::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 245px;
+    z-index: -1;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+    transform: rotate(6deg);
+    margin-bottom: 20px;
+    background: $rosy;
+}
+
+.adding-person-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle-modal-addperson{
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+width: 325px;
+height: 35px;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+.person-modal-input{
+    width: 300px;
+height: 39px;
+
+/* white as winter snow */
+
+border: 2px solid #FFF5F5;
+box-sizing: border-box;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+background: transparent;
+margin-bottom: 20px;
+
+
+
+/* five golden rings */
+
+color: #F5DA77;
+}
+
+.person-modal-input::placeholder{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* five golden rings */
+
+color: #F5DA77;
+}
+
+.button-adding-person{
+    display: inline-flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+outline: none;
+border: none;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* navy night */
+
+color: #002863;
+width: 141px;
+height: 34px;
+
+/* rosy cheeks */
+
+background: #FF77E1;
+}
+
+#yellow-x{
+    color: $goldenrings;
+}
+
+.add-gift-modal{
+    width: 447px;
+    height: 430px;
+    
+    /* navy night */
+    
+    background: $seafoamgrinch;
+    margin-left: 32.6vw;
+    position: absolute;
+    margin-top: 5vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subtitle-modal-addgift{
+    font-family: $josefin;
+    width: 325px;
+height: 35px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* coal in your stocking */
+
+color: #0E0B0B;
+}
+
+.adding-gift-revealed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-gift-input{
+    width: 300px;
+height: 39px;
+margin-bottom: 10px;
+/* coal in your stocking */
+
+border: 2px solid #0E0B0B;
+box-sizing: border-box;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* rudolph */
+background: transparent;
+color: #F35849;
+}
+
+.add-gift-button{
+    width: 141px;
+height: 34px;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: inline-flex;
+align-items: center;
+border: none;
+outline: none;
+margin-bottom: 10px;
+text-align: center;
+justify-content: center;
+
+/* navy night */
+
+color: #002863;
+
+/* five golden rings */
+
+background: #F5DA77;
+}
+
+.add-gift-input::placeholder{
+    font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* rudolph */
+
+color: #F35849;
+}
+
+.title-yellow-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    
+    width: 245px;
+    
+    font-family: $abril;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    /* rosy cheeks */
+    
+    color: $navynight;
+    
+    
+    /* white as winter snow */
+    
+    border: 4px solid #FFF5F5;
+    box-sizing: border-box;
+    background: $goldenrings;
+    margin-bottom: 25px;
+}
+
+.title-yellow-modal::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 245px;
+    z-index: -1;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+    transform: rotate(6deg);
+    margin-bottom: 20px;
+    background: $navynight;
+}
+
+.budget-modal{
+    width: 433px;
+    height: 376px;
+    
+    /* noble fir */
+    
+    background: $noblefir;
+    
+    /* navy night */
+    
+    margin-left: 32.6vw;
+    position: absolute;
+    margin-top: 5vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subtitle-modal-budget{
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+}
+
+.budget-modal-input{
+    width: 300px;
+height: 109px;
+background: transparent;
+font-family: $abril;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 97px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* seafoam grinch */
+
+color: #81D7AD;
+/* white as winter snow */
+
+border: 5px solid #FFF5F5;
+box-sizing: border-box;
+}
+
+.button-adding-budget{
+    display: inline-flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+outline: none;
+border: none;
+
+width: 179px;
+height: 34px;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+align-items: center;
+text-align: center;
+
+/* navy night */
+margin-top: 12px;
+color: #002863;
+
+/* rosy cheeks */
+
+background: #FF77E1;
+}
+
+.edit-budget{
+    display: inline-flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+width: 120px;
+height: 34px;
+
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+border: none;
+outline: none;
+
+/* navy night *
+
+/* five golden rings */
+
+background: #F5DA77;
+}
+
+.edit-budget-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+    margin-top: 33px;
+}
+
+.email-modal{
+    width: 447px;
+    height: 378px;
+    
+    /* navy night */
+    
+    background: $rosy;
+    margin-left: 32.6vw;
+    position: absolute;
+    margin-top: 5vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.title-black-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    
+    width: 245px;
+    
+    font-family: $abril;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    /* rosy cheeks */
+    
+    color: $white;
+    
+    
+    /* white as winter snow */
+    
+    border: 4px solid #FFF5F5;
+    box-sizing: border-box;
+    background: $coal;
+    margin-bottom: 25px;
+}
+
+.title-black-modal::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 245px;
+    z-index: -1;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotate(6deg);
+    transform: rotate(6deg);
+    margin-bottom: 20px;
+    background: $coal;
+}
+
+.email-modal-submit{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+
+width: 141px;
+height: 34px;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+border: none;
+outline: none;
+
+/* noble fir */
+
+background: #023535;
+}
+
+#dropdown-email{
+    width: 300px;
+height: 39px;
+
+/* coal in your stocking */
+background: transparent;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* five golden rings */
+
+color: #F5DA77;
+border: 2px solid #0E0B0B;
+box-sizing: border-box;
+}
+
+#email.note-input{
+    background: transparent;
+font-family: $josefin;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* five golden rings */
+
+color: #F5DA77;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+input:focus::placeholder{
+    color: transparent;
+}
+
+#email.note-input::placeholder{
+    background: transparent;
+    font-family: $josefin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* five golden rings */
+    
+    color: #F5DA77;
+    padding-right: 12px;
+}
+
+.select-box select {
+	background: transparent;
+	width: 200px;
+	height: 35px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+.select-box {
+	width: 180px;
+	height: 35px;
+	overflow: hidden;
+	background: url(https://dl.dropbox.com/u/122540013/img/arrow.png) no-repeat right #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px 5px 5px 3px;
+}
+
+.select-box select {
+	padding-right: 0;
+	vertical-align: top!important;
+	text-align: left;
+	height: auto;
+	line-height: 1em;
+}
+select {text-align-last:center; }
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin-top: 40px;
+    transition: 200ms ease all;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  .checkmark-white{
+    border: 3px solid $white;
+  }
+
+  .checkmark-black{
+    border: 3px solid #023535;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    background-image: url('../images/present.svg');
+    transition: 150ms ease all;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+    transition: 150ms ease all;
+    opacity: 1;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    width: 21px;
+    height: 27px;
+    top: -13px;
+    left: -3px;
+    background-image: url('../images/present.svg');
+  }
+
+
+  .yellow-box{
+    width: 837px;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* five golden rings */
+    
+    background: #F5DA77;
+  }
+
+  .thanks-button{
+    width: 82px;
+    height: 28px;
+    
+    /* rudolph */
+    
+    background: #F35849;
+    font-family: $josefin;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+/* white as winter snow */
+font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+justify-content: center;
+color: #FFF5F5;
+  }
+
+  .sign-up-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 112px;
+    height: 28px;
+    margin-top: 20px;
+    /* navy night */
+    justify-content: center;
+    font-family: Josefin Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 12px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+
+/* white as winter snow */
+
+color: #FFF5F5;
+    background: #002863;
+  }
+
+  button{
+      cursor: pointer;
+  }

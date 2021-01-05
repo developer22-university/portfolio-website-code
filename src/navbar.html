@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  padding: 10px 13px;
+  font-size: 20px;
+  font-weight:bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color:red;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: blue;}
+
+.button:active {
+  background-color: skyblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+footer {
+  padding: 20px;
+  color: var(--black);
+  background-color: var(--light-cyan);
+  border-top: 3px solid;
+  marin-top:-220px;
+  height:200px;
+
+}
+.wrapper{
+margin-top:-1000px;
+height:100px;
+
+}
+#main{
+
+  height:60px;
+}
+
+.red {
+  
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: #F12231;
+}
+
+.blue {
+ 
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: #0C99E3;
+}
+
+.heading {
+  margin-top:-60px;
+  position: relative;
+  margin: 0 0 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+}
+
+.heading:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 0;
+    width: 50px;
+    height: 6px;
+    border-left: 50px solid #f12735;
+    background-color: #1598e3;
+}
+.heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  border-right: 3px solid #1598e3;
+  border-bottom: 3px solid #1598e3;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+</style>
+<script src="navbar.js"></script>
+</head>
+<body>
+<div id="main">
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+            <img src="21.png" alt="paris">
+
+               <h4 class="font-effect-fire"><a href="navbar.html">SelfStudy</a></h4>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#sec">About</a></li>
+                    <li><a href="x.html">Features</a></li>
+                    <li><button class="button">Logout</button></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+  <section class="home">
+    </section>
+<div class="contain">
+<div class="arrow">
+<span></span>
+                <span></span>
+                <span></span>
+</div>
+<div id="sec"></div>
+<div class="red"></div>
+<div class="blue"></div>
+<h2 class="heading">ABOUT Us</h2>
+ <section>
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/280406/seattle-botanical-gardens.jpg);">
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <p>&ldquo;I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.&rdquo;
+          <cite>- Maya Angelou</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/280406/seattle-library-sm.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item">
+        <p>&ldquo;Simple is good.&rdquo;
+          <cite>- Jim Henson</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/280406/seattle-skylight-sm.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <p>&ldquo;Everybody has a plan until they get punched in the mouth.&rdquo;
+          <cite>- Mike Tyson</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/280406/madison-overture.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text col-left">
+      <div class="Aligner-item">
+        <p>&ldquo;We are what we pretend to be, so we must be careful about what we pretend to be&rdquo;
+          <cite>- Kurt Vonnegut, Jr.</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-flex">
+    <div class="col col-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/280406/madison-rainbow.jpg);">
+      &nbsp;
+    </div>
+    <div class="col col-text">
+      <div class="Aligner-item">
+        <p>&ldquo;Perfect is the enemy of good.&rdquo;
+          <cite> - Voltaire</cite>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="wrapper">
+<footer style="height:auto; background-color:#F7C201;">
+  <h1 style="color:blue; padding:40px; margin:0; text-align:center;">Catch up!!&nbsp;<br>if you have any interesting ideas for our work..</h1>
+</footer>
+</div>
+  </div>
+  </body>
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</html>

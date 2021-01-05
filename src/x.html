@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+
+body {
+  font-family: cursive;
+  background-image: url('33.jpg'); 
+  background-attachment: repeat-x;
+  
+}
+.container{
+
+  margin-top:-28px;
+}
+.glow {
+  font-size: 75px;
+  color: #9900cc;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  margin-top:-15px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.zoom {
+  padding: 50px;
+  background-color: transparent;
+  transition: transform .2s; /* Animation */
+  width: 280px;
+  height: 160px;
+  margin: 0 auto;
+  margin-left:20px;
+  
+}
+.zoom:hover {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.grid-container {
+  grid-row-gap: 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 15px;
+  align-items: stretch;
+  height: 100%;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color:green;
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 30px;
+
+}
+img{
+  width:280px;
+  height:280px;
+  position:center;
+  margin-left:-80px;
+  margin-top:-30px;
+  border: 3px dotted #00ffff;
+  border-radius: 8px;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: #ff99ff;
+  color: blue;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Gray */
+.default {
+  border-color: whitesmoke;
+  color: #660066;
+}
+
+.default:hover {
+  background: #660066;
+  color:#ff99ff;
+}
+
+
+
+
+.hero-bkg-animated {
+  background-image: url('33.jpg') repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+.hero {
+  padding: 10px 20px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  margin-top:-8px;
+  margin-left:-6px;
+  background-color:#000099;
+  border: none;
+  float: left;
+  border-radius: 15px;
+  margin:2px solid yellow;
+  box-shadow: 0 7px #66ffff;
+  text-decoration:none;
+}
+
+.hero:hover {background-color: #99ff33
+color:red; }
+
+.hero:active {
+  background-color: blue;
+  box-shadow: 0 5px  #009900;
+  transform: translateY(4px);
+}
+</style>
+
+<div class="hero-bkg-animated">
+<body>
+<a href="navbar.html" class="hero" >Back</a>
+<h1 class="glow">Useful Features</h1>
+<div class="container">
+  <main class="grid">
+    <article style="background-color:  #cccc00">
+    <div class="zoom">
+      <img src="23.jpg" alt="Sample photo"></div>
+      <div class="text" style="color:white">
+        <h3>Seamlessly visualize quality</h3>
+        <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+        <a href="x.html"><button class="btn  default">Here's how</button></a>
+      </div>
+    </article>
+    <article style="background-color:  #ff0080">
+    <div class="zoom">
+      <img src="../src/images/24.jpg" alt="Sample photo"></div>
+      <div class="text" style="color:white">
+        <h3>Completely Synergize</h3>
+        <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+        <a href="x.html"><button class="btn default">Here's how</button></a>
+      </div>
+     
+    </article>
+    <article style="background-color: #669900">
+    <div class="zoom">
+      <img src="../src/images/25.jpg" alt="Sample photo">
+      </div>
+      <div class="text" style="color: white">
+        <h3>Dynamically Procrastinate</h3>
+        <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+        <a href="x.html"><button class="btn default">Read more</button></a>
+     
+      </div>
+    </article>
+    <article style="background-color:  #3399ff">
+    <div class="zoom">
+      <img src="../src/images/26.jpg" alt="Sample photo"></div>
+      <div class="text" style="color: white">
+        <h3>Best in class</h3>
+        <p>Imagine jumping into that boat, and just letting it sail wherever the wind takes you...</p>
+        <a href="x.html"> <button class="btn default">Read more</button></a>
+    
+      </div>
+    </article>
+     <article style="background-color: #ff9933" style="position:relative">
+    <div class="zoom">
+      <img src="../src/images/25.jpg" alt="Sample photo">
+      </div>
+      <div class="text" style="color: white">
+        <h3>Dynamically Procrastinate</h3>
+        <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+        <a href="x.html"><button class="btn default">Read more</button></a>
+     
+      </div>
+    </article>
+  
+  </main>
+</div>
+</body>
+</div>
+</html>
